@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Remoção</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="Logo.png" alt="Hospital Maria Lucinda">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="assistenteSocial.html">Assistente Social</a></li>
+            <li><a href="BID.html">Boletim Diário</a></li>
+            <li><a href="enfermagem.html">Enfermagem</a></li>
+            <li><a href="fisioterapia.html">Fisioterapia</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="remocao.html">Remoções</a></li>
+            <li><a href="obitos.html">Óbitos</a></li>
+            <li><a href="ti.html">Tec. da Informação</a></li>
+        </ul>
+    </div>
+
+</div>
+<div class="container">
+    <form class="form-container">
+        <fieldset>
+            <legend>Atendimento</legend>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Data do atendimento:</label><input type="date">
+                </div>
+
+                <div class="form-group nome-paciente">
+                    <label>Nome do paciente:</label><input type="text">
+                </div>
+
+                <div class="form-group">
+                    <label>Idade:</label><input type="number">
+                </div>
+
+                <div class="form-group">
+                    <label>Telefone:</label>
+                    <input type="text" name="telefone" placeholder="(00) 00000-0000">
+                </div>
+
+                <div class="form-group nome-paciente">
+                    <label>Setor:</label>
+                    <select>
+                        <option value="" selected>Tipo do atendimento</option>
+                        <option>Encaminhamento Rede de Saúde</option>
+                        <option>Encaminhamento Rede Socioassistencial</option>
+                        <option>Orientações - normas e rotinas</option>
+                        <option>Articulação externa / Rede</option>
+                        <option>Articulação externa / Família</option>
+                        <option>Atendimento violência</option>
+                        <option>Elaboração de relatórios sociais</option>
+                        <option>Articulação equipe</option>
+                        <option>Atendmento no leito</option>
+                        <option>Declaração de comparecimento</option>
+                        <option>Orientação pós-óbito</option>
+                        <option>Evolução social</option>
+                        <option>Demanda espontânea / outros</option>
+                    </select>
+                </div>
+                <div class="form-group nome-paciente">
+                    <label>Observação:</label>
+                    <input type="text">
+                </div>
+                </div>
+            </fieldset>
+            <label><button class="btn">Salvar</button>
+        </form>
+    </div>
+</div>  
+
+    <div class="logout">
+        <span>🔓 Funcionário</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Óbito</title>
+    <style>
+        /* Reset de estilos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Corpo da página */
+        body {
+            background-color: #f4f4f4;
+            padding-top: 20px;
+        }
+
+        /* Container do formulário */
+        .form-container {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Estiliza o fieldset */
+        fieldset {
+            border: 2px solid #007bff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        /* Estiliza o título */
+        legend {
+            font-size: 18px;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+        /* Estiliza os grupos do formulário e as colunas */
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Cria 3 colunas */
+            gap: 20px; /* Espaçamento entre as colunas */
+            margin-top: 15px;
+        }
+
+        /* Estiliza os rótulos */
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        /* Estiliza os campos de entrada */
+        input[type="text"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"],
+        input[type="radio"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Botão estilizado */
+        .btn {
+            background-color: #007bff;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form>
+            <fieldset>
+                <legend>Registro de Óbito</legend>
+
+                <div class="form-grid">
+                    <!-- Coluna 1 -->
+                    <div>
+                        <label>Data da remoção:</label>
+                        <input type="date" name="data_do_obito">
+                    </div>
+
+                    <div>
+                        <label>Hora da remoção:</label>
+                        <input type="time" name="hora">
+                    </div>
+
+                    <div>
+                        <label>Dia da semana:</label>
+                        <input type="text" name="dia_da_semana">
+                    </div>
+
+                    <!-- Coluna 2 -->
+                    <div>
+                        <label>Iniciais do nome:</label>
+                        <input type="text" name="iniciais">
+                    </div>
+
+                    <div>
+                        <label>Motivo:</label>
+                        <input type="text" name="causa">
+                    </div>
+
+                    <div>
+                        <label>Município:</label>
+                        <input type="text" name="municipio">
+                    </div>
+
+                    <!-- Coluna 3 -->
+                    <div>
+                        <label>Senha de central de leitos:</label>
+                        <input type="number" name="senha">
+                    </div>
+
+                    <div>
+                        <p>Acompanhamento Médico:</p>
+                        <input type="radio" id="acompanhamentoNao" name="confirmacao" value="nao">
+                        <label for="acompanhamentoNao">Não</label>
+                        <input type="radio" id="acompanhamentoSim" name="confirmacao" value="sim">
+                        <label for="acompanhamentoSim">Sim</label>
+                    </div>
+                </div>
+
+                <button class="btn" type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.menu {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+.menu li {
+    width: 100%;
+    padding: 10px;
+    background-color: #002b5c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.menu li:hover {
+    background-color: #D92525;
+}
+
+.container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-container {
+    background: white;
+    padding: 5px 30px 5px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    border-radius: 10px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 90%; /* Reduza para o tamanho desejado */
+    padding: 5px; /* Diminua o espaçamento interno */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 12px; /*diminuir o tamanho da fonte do conteúdo digitado*/
+    }
+
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table-container th, .table-container td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.table-container th {
+    background-color: #002b5c;
+    color: white;
+    font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn-container {
+    display: inline;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 15px 5px 5px 5px;
+}
+
+.btn:hover {
+    background-color: #D92525;
+    color: #ffffff;
+}
+
+.logout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #f8f8f8;
+}
+
+#tituloPlanTi{
+    margin: 15px 0px 5px 0px;
+    font-size: 13px;
+}
+
+.codigosEspecialidades{
+    text-align: center;
+    font-size: 13px;
+}
+
+#competencia{
+    width: 130px;
+}
+
+      fieldset {
+        border: 2px solid #002b5c;
+        padding: 5px  20px;
+        border-radius: 8px;
+    }
+    
+    /* Estiliza o título */
+      legend {
+        font-size: 18px;
+        font-weight: bold;
+        color: #002b5c;
+    }
+    
+    /* Estiliza os rótulos */
+    label {
+        display: block;
+        font-weight: bold;
+        font-size: 12px;
+    }
+     /* Estiliza os grupos do formulário e as colunas */
+    .form-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Cria 3 colunas */
+    gap: 2px 5px; /* Espaçamento entre as colunas */
+    margin-top: 5px;
+    }
+
+    .formularios{
+        width: 1000px;
+        padding: 5px; /* Reduzindo espaçamento interno */
+    }
+    
+    .nome-paciente {
+        grid-column: span 2; /* Nome do Paciente ocupa duas colunas */
+    }
+

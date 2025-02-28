@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cadastro</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="Logo.png" alt="Hospital Maria Lucinda">
+        <ul>
+            <li><a href="index.html">Página Inicial</a></li>
+            <li><a href="assistenteSocial.html">Assistente Social</a></li>
+            <li><a href="BID.html">Boletim Diário</a></li>
+            <li><a href="enfermagem.html">Enfermagem</a></li>
+            <li><a href="fisioterapia.html">Fisioterapia</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="remocao.html">Remoções</a></li>
+            <li><a href="obitos.html">Óbitos</a></li>
+            <li><a href="ti.html">Tec. da Informação</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <form action="/enviar_formulario" method="post" class="formularios">
+                <fieldset>
+                    <legend>Dados do Paciente</legend>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nome_completo">Nome Completo/Idade:</label>
+                            <input type="text" id="nome_completo" name="nome_completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="hd">HD:</label>
+                            <input type="text" id="hd" name="hd">
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha:</label>
+                            <input type="password" id="senha" name="senha">
+                        </div>
+                        <div class="form-group">
+                            <label for="destino_transf">Destino da Transf.:</label>
+                            <input type="text" id="destino_transf" name="destino_transf">
+                        </div>
+                        <div class="form-group">
+                            <label for="admissao_hoje">Admissão Hoje:</label>
+                            <input type="text" id="admissao_hoje" name="admissao_hoje">
+                        </div>
+                        <div class="form-group">
+                            <label for="tempo_permanencia">Tempo de Permanência:</label>
+                            <input type="text" id="tempo_permanencia" name="tempo_permanencia">
+                        </div>
+                        <div class="form-group">
+                            <label for="situacao_atual">Situação Atual:</label>
+                            <input type="text" id="situacao_atual" name="situacao_atual">
+                        </div>
+                        <div class="form-group">
+                            <label for="enfermeiro">Enfermeiro:</label>
+                            <input type="text" id="enfermeiro" name="enfermeiro">
+                        </div>
+                    </div>
+                </fieldset>
+            <input class="btn" type="submit" value="Salvar">
+            <input class="btn" type="submit" value="Consultar">
+        </div>
+    </form>
+</body>
+</html>

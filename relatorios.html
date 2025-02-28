@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta Cadastro</title>
+    <link rel="stylesheet" href="modelo.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="Logo.png" alt="Hospital Maria Lucinda">
+        <ul>
+            <li><a href="index.html">Página Inicial</a> </li>
+            <li><a href="assistenteSocial.html">Assistente Social</a> </li>
+            <li><a href="BID.html">Boletim Diário</a> </li>
+            <li><a href="enfermagem.html">Enfermagem</a> </li>
+            <li><a href="fisioterapia.html">Fisioterapia</a> </li>
+            <li><a href="relatorios.html">Relatórios</a> </li>
+            <li><a href="remocao.html">Remoções</a> </li>
+            <li><a href="obitos.html">Óbitos</a> </li>
+            <li><a href="ti.html">Tec. da Informação</a> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <form class="formularios">
+            <fieldset>
+                <legend>Registro de Remoção</legend>
+
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Data da Remoção:</label>
+                        <input type="date" name="data_da_remocao">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hora da Remoção:</label>
+                        <input type="time" name="hora">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="diaSemana">Dia da Semana:</label>
+                        <select name="diaSemana" id="diaSemana">
+                            <option value="" selected disabled>Selecione um dia</option>
+                            <option value="segunda-feira">Segunda-feira</option>
+                            <option value="terca-feira">Terça-feira</option>
+                            <option value="quarta-feira">Quarta-feira</option>
+                            <option value="quinta-feira">Quinta-feira</option>
+                            <option value="sexta-feira">Sexta-feira</option>
+                            <option value="sabado">Sábado</option>
+                            <option value="domingo">Domingo</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Iniciais do Nome:</label>
+                        <input type="text" name="iniciais">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Motivo:</label>
+                        <input type="text" name="causa">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Município:</label>
+                        <input type="text" name="municipio">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Senha da Central de Leitos:</label>
+                        <input type="number" name="senha">
+                    </div>
+
+                    <div class="form-group radio-group">
+                        <label>Acompanhamento Médico:</label>
+                        <div>
+                            <input type="radio" id="nao" name="confirmacao" value="nao">
+                            <label for="nao">Não</label>
+
+                            <input type="radio" id="sim" name="confirmacao" value="sim">
+                            <label for="sim">Sim</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="btnRemocaoSalvar" class="btn" type="submit">Salvar</button>
+                <button id="btnRemocaoConsultar"class="btn" type="submit">C</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="logout">
+        <span>🔓 Funcionário</span>
+    </div>
+</body>
+</html>
